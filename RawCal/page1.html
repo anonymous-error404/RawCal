@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to your WorkSpace!</h1>
+    </header>
+    <br>
+    <p>Fields marked with * are required <br><br>All Dimensions must be in meters</p>
+    <form action="">
+        <div class="form-group">
+            <span id="io">*Enter length of plinth:</span id="io">
+            <input type="number" id="length" class="input" required name="pl" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter breadth of plinth:</span id="io">
+            <input type="number" id="breadth" class="input" required name="pb" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter number of floors:</span id="io">
+            <input type="number" id="flrs" class="input" required name="flrs" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter length of column:</span id="io">
+            <input type="number" id="clm1" class="input" required name="c1" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter breadth of column:</span id="io">
+            <input type="number" id="clm2" class="input" required name="c2" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter height of column:</span id="io">
+            <input type="number" id="clm3" class="input" required name="c3" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter length of slab:</span id="io">
+            <input type="number" id="sb1" class="input" required name="s1" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter breadth of slab:</span id="io">
+            <input type="number" id="sb2" class="input" required name="s2" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter height of slab:</span id="io">
+            <input type="number" id="sb3" class="input" required name="s3" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter length of beam:</span id="io">
+            <input type="number" id="bm1" class="input" required name="b1" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter breadth of beam:</span id="io">
+            <input type="number" id="bm2" class="input" required name="b2" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter height of beam:</span id="io">
+            <input type="number" id="bm3" class="input" required name="b3" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter price of RCC:</span id="io">
+            <input type="number" id="rcc" class="input" required name="rcc" autocomplete="on">
+        </div>
+        <div class="form-group">
+            <span id="io">*Enter price of steel:</span id="io">
+            <input type="number" id="steel" class="input" required name="steel" autocomplete="on">
+        </div>
+    </form>
+    
+
+    <footer>
+        <button onclick="myfunction()" type="submit" id="btn">Get Results</button>
+        <br><br>
+        <div id="output1"><label id="output2"></label></div>
+        <br>
+    </footer>
+    <script src="new.js"></script>
+</body>
+
+</html>

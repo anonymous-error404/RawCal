@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RawCal - Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Dark background */
+            color: white;
+            background-image: url("img4.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            height: 80vh; /* Adjusted height for less space between sections */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            text-align: left;
+            position: relative;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start slightly lower */
+            transition: opacity 0.6s ease, transform 0.6s ease; /* Fade-in effect */
+        }
+
+        .section.visible {
+            opacity: 1; /* Show the section */
+            transform: translateY(0); /* Move to original position */
+        }
+
+        .section h1,
+        .section h2 {
+            font-family: 'Georgia', serif;
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ccc; /* Lighter text color */
+            position: relative;
+            z-index: 2; /* Ensures text is on top */
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #bbb; /* Slightly lighter gray */
+            max-width: 800px;
+            line-height: 1.6;
+            position: relative;
+            z-index: 2; /* Ensures text is on top */
+        }
+
+        .dark-overlay {
+            background-color: #111; /* Fully opaque background */
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 10;
+            left: 0;
+            z-index: 1; /* Keeps overlay behind text */
+        }
+
+        .btn {
+            padding: 15px 30px;
+            margin: 20px 0; /* Reduced margin */
+            background-color: #111; /* Medium gray button */
+            color: #bbb;
+            text-decoration: none;
+            font-size: 1.5em; /* Slightly larger font size */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #222; /* Slightly lighter gray on hover */
+        }
+
+        .section-1 {
+            background-image: url('https://your-image-url-1.jpg'); /* Replace with actual image */
+            justify-content: flex-start;
+        }
+
+        .section-2 {
+            background-image: url('https://your-image-url-2.jpg'); /* Replace with actual image */
+            justify-content: flex-end;
+        }
+
+        .section-3 {
+            background-image: url('https://your-image-url-3.jpg'); /* Replace with actual image */
+            justify-content: flex-start;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-social-icons {
+            margin-top: 10px;
+            font-size : 1.5em;
+        }
+
+        .footer-social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-social-icons a:hover {
+            color: #999; /* Lighter hover effect */
+        }
+
+        footer p {
+            margin: 10px 0 0;
+        }
+
+        nav{
+            font-size-adjust: 0.9;
+            color: white;
+        }
+
+        nav a{
+            font-size-adjust: 0.9;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover{
+            color:#bbb;
+            transition: 0.2s ease;
+        }
+
+        .img{
+
+            position: relative;
+            z-index: 2;   
+        }
+        
+        .tab{
+            padding: 100px;
+        }
+
+       #img1{
+        width: 450px;
+       }
+       #img1:hover{
+        transform: scale(1.05);
+        transition: 0.5s ease;
+       }
+       #img2{
+        width: 400px;
+       }
+       #img2:hover{
+        transform: scale(1.05);
+        transition: 0.5s ease;
+       }
+       #img3{
+        width: 550px;
+       }
+       #img3:hover{
+        transform: scale(1.05);
+        transition: 0.5s ease;
+       }
+
+       #span_img3{
+        padding : 40px
+       }
+
+        
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to RawCal</h1>
+    <nav>
+        <a href="page1.html">Go to WorkSpace</a>&emsp13;&emsp13;|
+        &emsp13;<a href="">About Us</a>&emsp13;&emsp13;|
+        &emsp13;<a href="">Terms & Policies</a>&emsp13;&emsp13;|
+        &emsp13;<a href="">Contact Us</a>&emsp13;&emsp13;|
+        &emsp13;<a href="">Feedback</a>
+    </nav>
+</header>
+
+<div class="section section-1">
+    <div class="dark-overlay"></div>
+    <div>
+        <h1>Discover Our Vision</h1>
+        <p>RawCal is dedicated to providing cutting-edge solutions for managing raw food calorie intake. Experience simplicity, precision, and results with our platform.</p>  
+    </div>
+    <span class="tab"></span><a href="https://marvelcinematicuniverse.fandom.com/wiki/Vision"><img src="img1.jpg" alt="" class="img" id="img1"></a>
+</div>
+
+
+<div class="section section-2">
+    <div class="dark-overlay"></div>
+    <a href=""><img src="img2.jpg" alt="" class="img" id="img2" ></a><span class="tab"></span>
+    <div>
+        <h2>Our Solutions</h2>
+        <p>Streamlining your nutritional journey through innovative tools and accurate calorie tracking. We offer user-friendly services to help you meet your health goals.</p>
+    </div>
+</div>
+
+<div class="section section-3">
+    <div class="dark-overlay"></div>
+    <div>
+        <h2>Join Us Today</h2>
+        <p>Become part of a growing community dedicated to health, wellness, and effective calorie management with RawCal.</p>
+    </div>
+    <span id="span_img3"></span><a href=""><img src="img3.jpg" alt="" class="img" id="img3"></a>
+</div>
+
+<!-- Get Started Button above Footer -->
+<div style="text-align: center; margin: 20px 0;">
+    <a href="page1.html" class="btn">Get Started</a>
+</div><br><br>
+
+<footer>
+    <p>&copy; 2024 RawCal | All Rights Reserved</p>
+    <div class="footer-social-icons">
+        <a href="https://www.youtube.com" target="_blank">▶️YouTube<i class="fab fa-youtube"></i></a>&emsp13;|
+        &emsp13;<a href="https://www.facebook.com" target="_blank">ⓕ<i class="fab fa-facebook-f"></i></a>&emsp13;|
+        &emsp13;<a href="https://www.twitter.com" target="_blank">𝕏<i class="fab fa-twitter"></i></a>&emsp13;|
+        &emsp13;<a href="https://www.linkedin.com" target="_blank">LinkedIn<i class="fab fa-linkedin-in"></i></a>&emsp13;|
+        &emsp13;<a href="https://www.instagram.com" target="_blank">🅾𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦<i class="fab fa-instagram"></i></a>&emsp13;
+    </div>
+</footer>
+
+<script>
+
+    // Fade-in effect for sections on scroll
+    const sections = document.querySelectorAll('.section');
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger the callback when 10% of the section is visible
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>
